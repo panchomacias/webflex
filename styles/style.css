@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Fonts */
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Index */
+
+/* Header */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #344e41;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar a {
+  display: block;
+  color: #a3b18a;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.navbar img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Seccion 1 */
+.seccion_home_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dad7cd;
+  padding: 2rem;
+}
+
+.tarjeta_home_1 {
+  color: #344e41;
+  font-size: 20px;
+  font-family: "Poppins";
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.tarjeta_imagen_home {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta_imagen_home img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Seccion 2 */
+
+.galeria_title {
+  text-decoration-line: overline underline;
+  text-decoration: purple;
+}
+
+.galeria_home{
+  padding: 10rem;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria p{
+border: 2px solid black;
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria_imagen_1{
+  width: 50%;
+height: 450px;
+justify-content: center;
+display: flex;
+}
+
+.galeria_imagen_1 img{
+  width: 100%;
+  height: 100%;
+}
+
+/* .galeria img {
+  border: 2px solid black;
+    width: 580px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+*/
+
+/* Secccion 3 */
+.seccion_home_3 {
+  width: 800px;
+  height: 800px;
+}
+
+.seccion_home_3 video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Newsletter Seccion4 */
+.seccion_home_4 {
+  background-image: url("../media/imgs/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 4rem;
+}
+
+/* Mobile
+@media only screen and (max-width: 500px){
+  .header{
+    /* en vez de fila, agregar columna */
+    /* usar flexbox */
+  }
+  .nav{
+    /* conviene poner nav 100% */
+  }
+
+  /* para ocultar una imagen etc
+  display: none; */
+} 
