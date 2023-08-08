@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laflacagorda</title>
     <link rel="stylesheet" href="/./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Poppins&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
   <body>
     <!-- Header + Nav -->
-    <header class="header">
+    <header>
         <div class="navbar">
+          <div class="logo_nav">
+            <img src="./media/imgs/logo.jpg" alt="logo" />
+            </div>
           <ul>
-            <li><img src="./media/imgs/logo.jpg" alt="" /></li>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="./pages/servicios.html">SERVICIOS</a></li>
             <li><a href="./pages/aboutus.html">NOSOTROS</a></li>
@@ -30,23 +25,23 @@
     <!-- Primera Seccion -->
     <main>
       <div class="seccion_home_1">
-        <div class="tarjeta_home_1">
-          <h3>
-            Lorem ipsum dolor <br />
-            sit amet consectetur.
-          </h3>
-          <button>Enviar</button>
+        <div class="texto_seccion_home_1">
+          <p class="title_seccion_home_1"> ipsum dolor sit amet consectetur.</p>
+          <h2 class="title_seccion_home_2">LOREM IMSUM AMET</h2>
         </div>
-        <div class="tarjeta_imagen_home">
-          <img src="./media/imgs/table-ge0268afb5_1280.jpg" alt="imgmain" />
+        <div class="hero_img">
+          <img src="./media/imgs/woodchair.jpg" alt="">
+          <div class="sale">
+            <p>20%</p>
+            <p>OFF</p>
+          </div>
         </div>
       </div>
       <!-- Segunda Seccion -->
-      <h1 class="title_galeria">Galeria Prueba</h1>
+      <h1 class="title_galeria">GALERIA PRUEBA</h1>
       <div class="galeria_home">
         <div class="galeria">
-          <!-- Agregar imagenes galeria, alternando texto -->
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. Quidem veniam alias deleniti <br/>pariatur quos voluptatibus commodi voluptate dolorum consequuntur earum?</p>
           <div class="galeria_imagen_1">
             <img src="./media/imgs/pexels-pixabay-289445.jpg" alt="imagenes">
           </div>
@@ -61,11 +56,18 @@
         </div>
       </div>
       <!-- Tercera Seccion -->
-      <div class="seccion_home_3">
-        <h4>Lorem, ipsum dolor.</h4>
-        <video src="./media/videos/production_id_5089241 (2160p).mp4"></video>
+      <h2 class="title_seccion_home_3">LOREM IPSUM</h2>
+      <p class="texto_seccion_home_3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <!-- Falta agregar video, no lo puedo manipular con flexbox -->
+     <div class="video_container">
+      <div class="video">
+        <!-- <video src="./media/videos/production_id_5089241 (2160p).mp4"></video> -->
       </div>
+     </div>
       <!-- Cuarta Seccion -->
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
       <div class="seccion_home_4">
         <h4>Lorem, ipsum dolor.</h4>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -83,15 +85,6 @@
           </form>
         </div>
       </div>
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <ul>
-          <li><p>Lorem, ipsum dolor.</p></li>
-          <li><a href="./pages/aboutus.html">Lorem.</a></li>
-          <li><a href="./pages/servicios.html">Lorem.</a></li>
-        </ul>
-      </div>
     </footer>
-  </body>
+    </body>
 </html>

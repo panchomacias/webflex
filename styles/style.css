@@ -10,70 +10,101 @@ font-family: 'Roboto', sans-serif; */
 
 /* Index */
 
-/* Header */
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-  background-color: #344e41;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #344E41;
+  border-bottom: 2px solid black;
 }
 
-.navbar li {
-  display: inline-block;
-  margin-right: 20px;
+.navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
-.navbar a {
-  display: block;
-  color: #a3b18a;
+.navbar li a{
   text-decoration: none;
-  font-family: "Poppins";
+  padding: 1rem;
+  color: #A3B18A;
+  font-size: 1.2rem;
+  font-family: Roboto;
   font-weight: bold;
 }
 
-.navbar img {
-  height: 40px;
-  vertical-align: middle;
-  margin-right: 10px;
+.logo_nav img{
+  max-width: 50px;
 }
 
 /* Seccion 1 */
-.seccion_home_1 {
+.seccion_home_1{
+  background-image: url("../media/imgs/wood\ background\ 2.jpg");
+  background-size: cover;
+  padding: 10rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: #dad7cd;
-  padding: 2rem;
+  border-bottom: 2px solid black;
+  background-position: center;
 }
 
-.tarjeta_home_1 {
-  color: #344e41;
-  font-size: 20px;
-  font-family: "Poppins";
-  border: 2px solid black;
-  margin-right: 10px;
+.title_seccion_home_1{
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: 'Roboto';
+  border: 2px dashed white;
+  width: max-content;
+  padding: 1rem;
+  color: #DAD7CD;
 }
 
-.tarjeta_imagen_home {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title_seccion_home_2{
+  font-size: 3rem;
+  font-family: Roboto;
+  color: #DAD7CD;
 }
 
-.tarjeta_imagen_home img {
-  max-width: 100%;
-  max-height: 100%;
+.hero_img{
+position: relative;
+max-width: max-content;
+object-fit: contain;
+width: 300px;
+}
+
+
+.hero_img img{
+width: 300px;
+object-fit: cover;
+  aspect-ratio: 1;
+}
+
+
+.sale{
+  position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    aspect-ratio: 1;
+    padding: 2.5rem;
+    border: 2px dashed white;
+    outline: 5px solid red;
+    color: white;
+    font-size: 20px;
+    left: 6rem;
+    top: 16rem;
+
 }
 
 /* Seccion 2 */
 
-.galeria_title {
-  text-decoration-line: overline underline;
-  text-decoration: purple;
+.title_galeria{
+  font-family: Roboto;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  color: #3A5A40;;
 }
 
 .galeria_home{
@@ -88,65 +119,286 @@ font-family: 'Roboto', sans-serif; */
 
 .galeria p{
 border: 2px solid black;
-    width: 50%;
-    height: 450px;
+    width: 45%;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #DAD7CD;
 }
 
 .galeria_imagen_1{
-  width: 50%;
-height: 450px;
+  width: 45%;
+height: 550px;
 justify-content: center;
 display: flex;
+object-fit: cover;
 }
 
 .galeria_imagen_1 img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-/* .galeria img {
-  border: 2px solid black;
-    width: 580px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-*/
+/* Seccion 3 */
 
-/* Secccion 3 */
-.seccion_home_3 {
-  width: 800px;
-  height: 800px;
+.title_seccion_home_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #344E41;
+  font-family: Roboto;
 }
 
-.seccion_home_3 video {
+.texto_seccion_home_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #A3B18A;
+  font-family: 'Roboto', sans-serif;
+}
+
+.video_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video{
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%; 
+  width: 50%; 
+  height: 0;
+  padding-bottom: 56.25%; 
+  position: relative; 
 }
 
 /* Newsletter Seccion4 */
-.seccion_home_4 {
-  background-image: url("../media/imgs/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  padding: 4rem;
+
+.footer {
+  background-color:#3A5A40;
+  color: #DAD7CD;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end
 }
 
-/* Mobile
-@media only screen and (max-width: 500px){
-  .header{
-    /* en vez de fila, agregar columna */
-    /* usar flexbox */
-  }
-  .nav{
-    /* conviene poner nav 100% */
+/* SERVICIOS */
+
+/* Seccion 1 */
+
+/* Seccion 2 */
+
+.title_seccion_2{
+  font-family: Roboto;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  color: #3A5A40;;
+}
+
+.texto_seccion_2{
+  font-family: Roboto;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3A5A40;;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-rows: repeat(3, auto); 
+  grid-template-columns: 1fr; 
+  height: 100%;
+}
+
+.grid_main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.grid_item{
+  text-align: center;
+}
+
+.grid_item img{
+  max-width: 100%;
+  height: auto;
+  max-height: 100px; 
+}
+
+/* Tercera Seccion */
+
+.card_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About us */
+
+.seccion_nsootros_1{
+  padding: 10rem;
+  background-color: #3A5A40;
+
+}
+
+.seccion_nosotros_1 h1{
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.tarjeta_nosotros_1{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 10rem;
+border: 2px solid black;
+margin-top: 1rem;
+}
+
+.tarjeta_nosotros_2{
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 10rem;
+border: 2px solid black;
+margin-top: 1rem;
+}
+
+.tarjeta_nosotros_3{
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 10rem;
+border: 2px solid black;
+margin-top: 1rem;
+}
+
+/* Segunda Seccion */
+
+.nosotros_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion_nosotros_2{
+display: flex;
+justify-content: space-around;
+}
+
+
+.img_nosotros{
+
+}
+
+.img_nosotros img{
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+
+/* Sustentabilidad */
+
+/* Primera Seccion */
+
+.title_sustentabilidad{
+  font-family: Roboto;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3A5A40;;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.seccion_sustentabilidad_1{
+  padding: 15rem;
+  background-image: url("../media/imgs/wood\ background\ 2.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rem;
+}
+
+.container_tarjeta_1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tarjeta_sustentabilidad_1{
+padding: 4rem;
+background-color: white;
+position: absolute;
+border: 2px solid black;
+top: 10rem;
+
+}
+
+.container_tarjeta_2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta_sustentabilidad_2{
+  background-color: white;
+  padding: 4rem;
+  position: absolute;
+  border: 2px solid black;
+  top: 10rem;
   }
 
-  /* para ocultar una imagen etc
-  display: none; */
-} 
+.container_tarjeta_3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta_sustentabilidad_3{
+  background-color: white;
+  padding: 4rem;
+  position: absolute;
+  border: 2px solid black;
+  top: 10rem;
+}
+
+/* Segunda Seccion */
+
+.segunda_seccion{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.segunda_seccion img{
+width: 5%;
+}
