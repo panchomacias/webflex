@@ -4,102 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
     <!-- Header - Navbar -->
     <header>
-      <div class="header">
-        <div class="navbar">
-          <ul>
-            <li><img src="../media/imgs/logo.jpg" alt="logo" /></li>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="../pages/servicios.html">SERVICIOS</a></li>
-            <li><a href="../pages/aboutus.html">NOSOTROS</a></li>
-            <li><a href="../pages/sustentabilidad.html">SUSTENTABILIDAD</a></li>
-            <li><a href="../pages/contacto.html">CONTACTO</a></li>
-          </ul>
-        </div>
+      <div class="navbar">
+        <div class="logo_nav">
+          <img src="../media/imgs/logo.jpg" alt="logo" />
+          </div>
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+          <li><a href="../pages/aboutus.html">NOSOTROS</a></li>
+          <li><a href="../pages/sustentabilidad.html">SUSTENTABILIDAD</a></li>
+          <li><a href="../pages/contacto.html">CONTACTO</a></li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
     <!-- Primera Seccion -->
     <main>
-      <div class="seeccion_servicios_1">
-        <h1>Lorem, ipsum dolor.</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, eum.
-        </p>
-        <img src="" alt="" />
-        <!-- Aca iria un scroll lateral, bootstrap? -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../media/imgs/pexels-pixabay-289445.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Primer Producto</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../media/imgs/pexels-valeria-boltneva-1129413.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../media/imgs/pexels-pew-nguyen-243975.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <!-- Segunda Seccion -->
-      <div class="seccios_servicios_2">
-        <div class="galeria_servicios_1">
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, harum?
-          </p>
-        </div>
-        <div class="galeria_servicios_2">
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, harum?
-          </p>
-        </div>
-        <div class="galeria_servicios_3">
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, harum?
-          </p>
-        </div>
-        <div class="galeria_servicios_4">
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, harum?
-          </p>
-        </div>
-        <div class="galeria_servicios_5">
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, harum?
-          </p>
-        </div>
-        <div class="galeria_servicios_6">
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, harum?
-          </p>
+      <h1 class="title_seccion_2">LOREM IPSUM</h1>
+      <p class="texto_seccion_2">Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="grid_container">
+        <div class="grid_main">
+          <div class="grid_item">
+            <img src="../media/Icons/recycle-sign.png" alt="Imagen 1">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="grid_item">
+            <img src="../media/Icons/chair.png" alt="Imagen 2">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="grid_item">
+            <img src="../media/Icons/fire.png" alt="Imagen 3">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="grid_item">
+            <img src="../media/Icons/handcraft.png" alt="Imagen 3">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="grid_item">
+            <img src="../media/Icons/money-bag.png" alt="Imagen 3">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="grid_item">
+            <img src="../media/Icons/support.png" alt="Imagen 3">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
         </div>
       </div>
       <!-- Tercera Seccion -->
-      <div class="seccion_servicios3">
-        <h3>Lorem, ipsum dolor.</h3>
-        <div class="tarjeta_servicios_1">
-          <img src="" alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <h1 class="title_seccion_2">LOREM IPSUM</h1>
+      <p class="texto_seccion_2">Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="card_container">
+        <div class="card" style="width: 25rem;">
+          <img src="../media/imgs/pexels-charlotte-may-5825696 (1).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
         </div>
-        <div class="tarjeta_servicios_2">
-          <img src="" alt="" />
-          Lorem ipsum dolor sit amet consectetur.
+        <div class="card" style="width: 25rem;">
+          <img src="../media/imgs/pexels-blank-space-2647714.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
         </div>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="seccion_home_4">
+        <h4>Lorem, ipsum dolor.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
         <div class="form_home_1">
           <form>
             <label for="email"></label>
             <input
               type="email"
-              id="email"
+              id="email"1
               name="email"
               placeholder="Ingrese su email"
               required
@@ -108,15 +138,7 @@
           </form>
         </div>
       </div>
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <ul>
-          <li><p>Lorem, ipsum dolor.</p></li>
-          <li><a href="../pages/aboutus.html">Lorem.</a></li>
-          <li><a href="../pages/servicios.html">Lorem.</a></li>
-        </ul>
-      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
